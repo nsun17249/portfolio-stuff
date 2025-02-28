@@ -182,8 +182,8 @@ footer {
   
   /* Caption text */
   .text {
-    color: #f2f2f2;
-    font-size: 15px;
+    color: #ff001e;
+    font-size: 30px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -219,10 +219,10 @@ footer {
   /* Fading animation */
   .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0}
     to {opacity: 1}
   }
