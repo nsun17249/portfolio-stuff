@@ -5,12 +5,14 @@
     <title>Portfolio Stuff</title>
     <!-- link to css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- include javascript -->
+    <script type="fancyfunctions" src="js/fancystuff.js"></script>
     <!-- adjusts width to fit device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
 
-<body>
+<body onload="showSlides()">
 
     <header>
         <div class="container">
@@ -19,6 +21,8 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -27,9 +31,92 @@
     <section class="content">
         <div class="container">
             <main>
-                <h1 title="bruhhh"> HAVE YOU SEEN THIS MAN?</h1>
-                <div class="fade-in-image">
-                    <img src="images/kareena_you_did_this.png" alt="kareena did this" width="400" height="400">
+                <div class="wrapper">
+                    <div>
+                        <h1 title="bruhhh"> HAVE YOU SEEN THIS MAN?</h1>
+                        <p>
+                            According to all known laws of aviation, there is no way a bee should be able to fly.
+                            Its wings are too small to get its fat little body off the ground.
+                            The bee, of course, flies anyway because bees don't care what humans think is impossible.
+                            Yellow, black. Yellow, black. Yellow, black. Yellow, black.
+                            Ooh, black and yellow!
+                            Let's shake it up a little.
+                            Barry! Breakfast is ready!
+                            Coming!
+                            Hang on a second.
+                            Hello?
+                            Barry?
+                            Adam?
+                            Can you believe this is happening?
+                            I can't.
+                            I'll pick you up.
+                            Looking sharp.
+                            Use the stairs, Your father paid good money for those.
+                            Sorry. I'm excited.
+                            Here's the graduate.
+                            We're very proud of you, son.
+                            A perfect report card, all B's.
+                            Very proud.
+                            Ma! I got a thing going here.
+                            You got lint on your fuzz.
+                            Ow! That's me!
+                            Wave to us! We'll be in row 118,000.
+                            Bye!
+                            Barry, I told you, stop flying in the house!
+                        </p>
+                    </div>
+
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/kareena_you_did_this.png" alt="kareena did this" style="width:100%">
+                            <div class="text">Have you seen this man?</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/PTSD_Luna.png" alt="kareena did this" style="width:100%">
+                            <div class="text">AGAIN</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/The_Thing_Pepe.png" alt="kareena did this" style="width:100%">
+                            <div class="text">Very satisfying</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) { slideIndex = 1 }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>
+
                 </div>
             </main>
         </div>
