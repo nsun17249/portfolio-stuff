@@ -7,23 +7,44 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- adjusts width to fit device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- use jquery to implement common header -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
-        </script>
-    <script>
-        $(function(){
-            $('#header').load('header.html');
-        });        
-    </script>
-
 </head>
 
 <body>
-    <div id = "header"></div>
+
+    <header>
+        <div class="container">
+            <div class="normal_link" id="logo"> <a href="index.html">My Portfolio</a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#">Projects</a>
+                            <div class="dropdown-content">
+                                <a href="makeup.html">3D Printed Makeup Rack</a>
+                                <a href="#">Dryer Timer Microcontroller</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section class="content">
         <div class="container">
             <main>
+                 <!-- Text half -->
+                 <div class="wrapper">
+                    <div>
+                        <h1 title="bruhhh"> Welcome to my Portfolio Website (WIP)</h1>
+                        <p>
+                            This website is being developed in my free time and is currently still work in progress. A
+                            lot of stuff right now does not work or exist.
+                        </p>
+                    </div>
             </main>
         </div>
     </section>

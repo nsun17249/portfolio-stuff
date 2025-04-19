@@ -26,12 +26,12 @@ h3 {
     padding: 0 20px;
 }
 
-.logo_container a{
+.normal_link a{
     text-decoration: none;
     color:#000;
 }
 
-.wrapper {
+.home_wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr;
     padding: 50px 25px;
@@ -42,6 +42,16 @@ h3 {
     height: fit-content;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    padding: 50px 25px;
+    gap: 20px;
+    background-color: white;
+    /* makes height match screen size */
+    min-height: 100dvh;
+    height: fit-content;
+}
 header {
     background-color: #FDDEF1;
     color: #000;
