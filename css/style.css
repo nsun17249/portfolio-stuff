@@ -18,10 +18,17 @@ h3 {
 }
 
 .container {
+    width: 70dvw;
     max-width: 1200px;
+    height: 4dvh;
     min-height: 38px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.logo_container a{
+    text-decoration: none;
+    color:#000;
 }
 
 .wrapper {
